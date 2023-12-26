@@ -61,7 +61,6 @@ div.question {
     position: absolute;
     margin-right: 120px;
 }
-/* .btn  */
 
 #noButton {
     position: absolute;
@@ -75,4 +74,13 @@ div.question {
 }
 #yesPage{
     font-style: normal;
+}
+
+ .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
