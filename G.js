@@ -8,7 +8,7 @@ function noPage() {
 }
 
 function homePage() {
-    window.location.href = "index.html";
+    window.location.href = "G.html";
 }
 
 function moveButton() {
