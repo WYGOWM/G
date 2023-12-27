@@ -1,14 +1,22 @@
 // import Math;
+var numClicks = 0;
+
 function nextPage() {
     window.location.href = "yes.html";
 }
 
+
 function noPage() {
-    window.location.href = "no.html";
+    if (numClicks >= 3) {
+        window.location.href = "no.html";
+    } else {
+        numClicks += 1;
+        moveButton();
+    }
 }
 
 function homePage() {
-    window.location.href = "G.html";
+    window.location.href = "index.html";
 }
 
 function moveButton() {
