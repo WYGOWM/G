@@ -1,5 +1,10 @@
-// import Math;
 var numClicks = 0;
+var homePages = ["index.html", "index2.html", "index3.html"]
+var noPages = ["no.html", "no2.html"]
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
 
 function nextPage() {
     window.location.href = "yes.html";
@@ -8,7 +13,7 @@ function nextPage() {
 
 function noPage() {
     if (numClicks >= 3) {
-        window.location.href = "no.html";
+        window.location.href = noPages[getRandomInt(2)];
     } else {
         numClicks += 1;
         moveButton();
@@ -16,7 +21,7 @@ function noPage() {
 }
 
 function homePage() {
-    window.location.href = "index.html";
+    window.location.href = homePages[getRandomInt(3)];
 }
 
 function moveButton() {
